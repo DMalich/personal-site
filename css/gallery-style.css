@@ -1,0 +1,156 @@
+@import "../css/reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #f1f1f1;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 80px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link.active {
+    color: #606060;
+}
+
+.main-content {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.pics-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 260px);
+    grid-template-rows: repeat(4, 180px);
+    grid-template-areas: 
+        "pic-1 pic-1 pic-3 pic-4"
+        "pic-2 pic-2 pic-3 pic-4"
+        "pic-5 pic-6 pic-7 pic-7"
+        "pic-5 pic-6 pic-8 pic-8";
+}
+
+.pic-1 { 
+    grid-area: pic-1;
+    overflow: hidden;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+
+}
+.pic-1:hover {
+    box-shadow: 0 0 15px 5px rgb(179, 178, 178);
+
+}
+.pic-2 { 
+    grid-area: pic-2;
+    overflow: hidden;
+}
+.pic-3 { 
+    grid-area: pic-3; 
+    overflow: hidden;
+}
+.pic-4 { 
+    grid-area: pic-4; 
+    overflow: hidden;
+}
+
+.pic-5 { grid-area: pic-5; }
+.pic-6 { grid-area: pic-6; }
+.pic-7 { 
+    grid-area: pic-7; 
+    overflow: hidden;
+}
+.pic-8 { grid-area: pic-8; }
+
+.pic-1 img {
+    object-fit: cover;
+    /* margin: -60px 0 0 -60px; */
+}
+
+.pic-2 img {
+    object-fit: cover;
+    /* margin: -120px 0 0 -60px; */
+}
+.pic-3 img {
+    object-fit: cover;
+    /* margin: -10px 0 0 -60px; */
+}
+.pic-4 img {
+    object-fit: cover;
+    /* margin: -0px 0 0 -60px; */
+}
+
+
+
+.pic-7 img {
+    object-fit: cover;
+    /* margin: -60px 0 0 -60px; */
+}
+
+img:hover {
+    /* border: 2px solid black; */
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+/* {
+    Photo by Logan Armstrong on Unsplash (barcelona)
+    Photo by <a href="https://unsplash.com/@loganstrongarms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Logan Armstrong</a> on <a href="https://unsplash.com/s/photos/barcelona?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+    Photo by Sorasak on Unsplash
+    Photo by <a href="https://unsplash.com/@boontohhgraphy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sorasak</a> on <a href="https://unsplash.com/s/photos/hallstatt-austria?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    
+    Photo by Emilia Niedźwiedzka on Unsplash
+    Photo by <a href="https://unsplash.com/@silverformymonsters?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emilia Niedźwiedzka</a> on <a href="https://unsplash.com/s/photos/zakopane?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    
+    Photo by Sander Lenaerts on Unsplash
+    Photo by <a href="https://unsplash.com/@sanderlenaerts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sander Lenaerts</a> on <a href="https://unsplash.com/s/photos/split?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    Photo by Pedro Bariak on Unsplash
+    Photo by <a href="https://unsplash.com/@vjpedro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pedro Bariak</a> on <a href="https://unsplash.com/s/photos/cesky-krumlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    Photo by Ostap Senyuk on Unsplash
+    Photo by <a href="https://unsplash.com/@kintecus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ostap Senyuk</a> on <a href="https://unsplash.com/s/photos/krakow?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    Photo by Marius Serban on Unsplash
+    Photo by <a href="https://unsplash.com/@twistlemon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marius Serban</a> on <a href="https://unsplash.com/s/photos/prague?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    Photo by Sarah Mutter on Unsplash
+    Photo by <a href="https://unsplash.com/@sarahmutter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sarah Mutter</a> on <a href="https://unsplash.com/s/photos/salzburg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    Photo by Victor Malyushev on Unsplash
+    Photo by <a href="https://unsplash.com/@malyushev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Victor Malyushev</a> on <a href="https://unsplash.com/s/photos/krakow?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+} */    
