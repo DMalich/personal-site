@@ -1,50 +1,7 @@
 @import "../css/reset.css";
+@import "../css/common-header-style.css";
+@import "../css/body-style.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-body {
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    font-size: 14px;
-}
-
-.container {
-    max-width: 1200px;
-    padding: 0 30px;
-    margin: 0 auto;
-}
-
-.header {
-    background-color: #f1f1f1;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    margin-bottom: 80px;
-}
-
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.logo {
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.nav-list {
-    display: flex;
-    column-gap: 50px;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.nav-link {
-    color: black;
-}
-
-.nav-link.active {
-    color: #606060;
-}
 
 .main-content {
     max-width: 1200px;
@@ -73,7 +30,7 @@ h1 {
         "pic-5 pic-6 pic-8 pic-8"
     ;
 }
-
+/* responsive design for tabs */
 @media (max-width: 1259px) {
     .pics-grid {
         grid-template-columns: repeat(2, 270px);
@@ -91,7 +48,7 @@ h1 {
         ;
     }
 }
-
+/* responsive design for mobile devices */
 @media (max-width: 500px) {
     .pics-grid {
         width: 100%;
@@ -165,7 +122,6 @@ h1 {
 }
 .pic-3 img {
     object-fit: cover;
-    /* margin: -10px 0 0 -60px; */
 }
 .pic-4 img {
     object-fit: cover;

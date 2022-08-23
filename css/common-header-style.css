@@ -1,0 +1,38 @@
+.container {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #f1f1f1;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 80px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link.active {
+    color: #606060;
+}

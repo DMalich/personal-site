@@ -1,50 +1,7 @@
 @import "../css/reset.css";
+@import "../css/common-header-style.css";
+@import "../css/body-style.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-body {
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    font-size: 14px;
-}
-
-.container {
-    max-width: 1200px;
-    padding: 0 30px;
-    margin: 0 auto;
-}
-
-.header {
-    background-color: #f1f1f1;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    margin-bottom: 80px;
-}
-
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.logo {
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.nav-list {
-    display: flex;
-    column-gap: 50px;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.nav-link {
-    color: black;
-}
-
-.nav-link.active {
-    color: #606060;
-}
 
 .main-content {
     max-width: 1200px;
@@ -74,16 +31,6 @@ body {
     flex-direction: column;
 }
 
-/* .left-side::before {
-    content: "";
-    position: absolute;
-    height: 70%;
-    width: 2px;
-    background-color: #606060;
-    right: -20px;
-
-}*/
-
 .right-side {
     width: 75%;
     margin-left: 75px;
@@ -108,7 +55,6 @@ body {
 .text-one, .text-two {
     color: rgb(90, 89, 89);
 }
-
 
 .right-side-header {
     font-size: 22px;
