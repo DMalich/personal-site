@@ -1,2 +1,2 @@
-# personal-site
-Personal site(html + css)
+# personal-website
+Personal website(html + css)
