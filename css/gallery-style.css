@@ -116,6 +116,7 @@ h1 {
 
 .pic-demo {
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    transition: 0.2s;
 }
 .pic-demo:hover {
     box-shadow: 0 0 15px 5px rgb(129, 129, 129);

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="../css/contact-style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-nav">
+                <h1 class="logo">Dov</h1>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="./home.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./content.html" class="nav-link">Content</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./gallery.html" class="nav-link">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="box-content">
+            <div class="left-side">
+                <div class="details address">
+                    <img src="../images/map-location-dot-solid.svg">         
+                    <div class="name">Address</div>
+                    <div class="text-one">Bat-Yam</div>
+                    <div class="text-two">Ben-Gurion, 111</div>
+                </div>
+                <div class="details phone">
+                    <img src="../images/phone-solid.svg">
+                    <div class="name">Phone number</div>
+                    <div class="text-one">+972-58-585-55-88</div>
+                    <div class="text-two">+972-54-454-44-55</div>
+                </div>
+                <div class="details email">
+                    <img src="../images/envelope-solid.svg">
+                    <div class="name">Email</div>
+                    <div class="text-one">email@mail.com</div>
+                    <div class="text-two">mail@email.com</div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="right-side-header">Send me a message</div>
+                <p>If you have any questions, please fill in form below.</p>
+
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your name"  pattern="^[A-Za-z]+$" required> 
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Enter your email" required> 
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" placeholder="Enter your phone number"> 
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
