@@ -70,7 +70,48 @@ h1 {
         "pic-1 pic-1 pic-3 pic-4"
         "pic-2 pic-2 pic-3 pic-4"
         "pic-5 pic-6 pic-7 pic-7"
-        "pic-5 pic-6 pic-8 pic-8";
+        "pic-5 pic-6 pic-8 pic-8"
+    ;
+}
+
+@media (max-width: 1259px) {
+    .pics-grid {
+        grid-template-columns: repeat(2, 270px);
+        grid-template-rows: repeat(8, 180px);
+        grid-template-areas: 
+            "pic-1 pic-1"
+            "pic-2 pic-2"
+            "pic-3 pic-4"
+            "pic-3 pic-4"
+
+            "pic-7 pic-7"
+            "pic-8 pic-8"
+            "pic-5 pic-6"
+            "pic-5 pic-6"
+        ;
+    }
+}
+
+@media (max-width: 500px) {
+    .pics-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "pic-1"
+            "pic-2"
+            "pic-3"
+            "pic-3"
+            "pic-4"
+            "pic-4"
+
+            "pic-7"
+            "pic-8"
+            "pic-5"
+            "pic-5"
+            "pic-6"
+            "pic-6"
+        ;
+    }
 }
 
 .pic-demo {
