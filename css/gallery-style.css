@@ -10,12 +10,12 @@
 }
 
 h1 {
-    display: flex;
     align-items: center;
+    display: flex;
+    font-size: 40px;
+    font-weight: 500;
     justify-content: center;
     margin-bottom: 30px;
-    font-weight: 500;
-    font-size: 40px;
 }
 
 .pics-grid {
@@ -30,8 +30,9 @@ h1 {
         "pic-5 pic-6 pic-8 pic-8"
     ;
 }
-/* responsive design for tabs */
-@media (max-width: 1259px) {
+
+/* responsive design for tablets */
+@media screen and (max-width: 1259px) {
     .pics-grid {
         grid-template-columns: repeat(2, 270px);
         grid-template-rows: repeat(8, 180px);
@@ -46,10 +47,12 @@ h1 {
             "pic-5 pic-6"
             "pic-5 pic-6"
         ;
+        justify-content: center;
     }
 }
+
 /* responsive design for mobile devices */
-@media (max-width: 500px) {
+@media screen and (max-width: 30em) {
     .pics-grid {
         width: 100%;
         grid-template-columns: 1fr;
