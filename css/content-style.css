@@ -22,7 +22,11 @@ h1 {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
 
+.grid-item {
+    border: 1px solid black;
 }
 
 .grid-item img {
@@ -31,15 +35,70 @@ h1 {
     object-fit: cover;
 }
 
+.grid-item figcaption {
+    text-align: center;
 
-#test {
+}
+
+
+#fig-test {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+.fig-container {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#a-test {
+    font-size: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    color: #34495e;
+}
+#a-test::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 0;
+    overflow: hidden;
+    transition: 0.6s;
+}
+.fig-container::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: #2980b9;
+    right: 0;
+    top: 0;
+    transition: 0.6s;
+}
+
+.fig-container:hover, #a-test::before, .fig-container:hover::before {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* #test {
     display: block;
-    /* position: relative; */
+    position: relative;
     overflow: hidden;
 }
 #test-img {
     display: block;
-    /* position: relative; */
+    position: relative;
 }
 .text {
     display: block;
@@ -52,4 +111,4 @@ h1 {
 }
 #test-img:hover .text {
     opacity: 1;
-}
+} */
