@@ -27,9 +27,14 @@
     margin-bottom: 20px;
 }
 
-.header-content p {
-    line-height: 2;
+.header-content h3 {
+    font-weight: 400;
+    font-size: 25px;
 }
+
+/* .header-content p {
+    line-height: 2;
+} */
 
 .header-img img {
     width: 300px;

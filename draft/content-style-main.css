@@ -1,0 +1,19 @@
+@import "../css/reset.css";
+@import "../css/common-header-style.css";
+@import "../css/body-style.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.main-content {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto 100px auto;
+}
+
+h1 {
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+    font-weight: 500;
+    justify-content: center;
+    margin-bottom: 30px;
+}
